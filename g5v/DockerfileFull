@@ -1,0 +1,25 @@
+FROM node:16 as builder
+
+ARG VUE_APP_G5V_API_URL
+ENV VUE_APP_G5V_API_URL=$VUE_APP_G5V_API_URL
+
+# create folder and copy application into folder
+WORKDIR /G5V
+COPY package*.json .
+COPY yarn.lock .
+
+# build application using yarn
+RUN yarn
+
+COPY . .
+
+ENV NODE_ENV=production
+
+RUN yarn build
+
+
+FROM nginx:mainline-alpine
+
+# Move default.conf into /etc/nginx/conf.d/
+COPY default.conf /etc/nginx/conf.d/default.conf
+COPY --from=builder /G5V/dist /usr/share/nginx/html
