@@ -217,3 +217,21 @@ cd g5v/
 ls
 cp -r dist/* /var/www/html/
 npm run build
+sudo apt install git
+git init
+git config --global init.defaultBranch main
+git init
+git add .
+rm -rf G5API/.git
+rm -rf g5v/.git
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/VeeNDeN2233/cs2-tournament.git
+git push -u origin main
+git branch
+git push -u origin master
+ssh-keygen -t ed25519 -C "belenikin2048@mail.ru"
+cat ~/.ssh/id_ed25519.pub
+git remote set-url origin git@github.com:VeeNDeN2233/cs2-tournament.git
+ssh -T git@github.co
+git push -u origin master
