@@ -38,7 +38,9 @@ services:
       - CADDY_INGRESS_NETWORKS=get5
 
   g5api:
-    image: ghcr.io/phlexplexico/g5api:latest
+    build:
+    context: ./G5API
+    dockerfile: Dockerfile
     depends_on:
       - get5db
     container_name: G5API
@@ -74,19 +76,21 @@ services:
     restart: always
 
   g5v:
-    build:
-      context: ../g5v
-      dockerfile: DockerfileFull
-      args:
-        VUE_APP_G5V_API_URL: http://cs2-tournament.ru/api
-    image: local-g5v:latest
-    container_name: G5V-Front-End
-    networks:
-      - get5
-    restart: always
-    labels:
-      caddy: cs2-tournament.ru
-      caddy.reverse_proxy: "{{upstreams}}"
+  build:
+    context: ../g5v
+    dockerfile: DockerfileFull
+    args:
+      VUE_APP_G5V_API_URL: "http://cs2-tournament.ru/api"
+  container_name: G5V-Front-End
+  networks:
+    - get5
+  restart: always
+  labels:
+    caddy: cs2-tournament.ru
+    caddy.reverse_proxy: "{{upstreams}}"
+  ports:
+    - 80:80
+
 
 networks:
   get5:

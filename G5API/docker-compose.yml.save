@@ -73,13 +73,10 @@ services:
       - LOCALLOGINS=false
     restart: always
 
-  g5v:
-    build:
-      context: ../g5v
-      dockerfile: DockerfileFull
-      args:
-        VUE_APP_G5V_API_URL: http://cs2-tournament.ru/api
-    image: local-g5v:latest
+    g5v:
+    image: ghcr.io/phlexplexico/g5v:latest
+    depends_on:
+      - g5api
     container_name: G5V-Front-End
     networks:
       - get5
