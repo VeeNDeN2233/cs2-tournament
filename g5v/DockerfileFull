@@ -1,5 +1,4 @@
-FROM node:16 as builder
-
+FROM node:16 AS builder
 ARG VUE_APP_G5V_API_URL
 ENV VUE_APP_G5V_API_URL=$VUE_APP_G5V_API_URL
 
@@ -18,8 +17,7 @@ ENV NODE_ENV=production
 RUN yarn build
 
 
-FROM nginx:mainline-alpine
-
+FROM nginx:1.25.2-alpine
 # Move default.conf into /etc/nginx/conf.d/
 COPY default.conf /etc/nginx/conf.d/default.conf
 COPY --from=builder /G5V/dist /usr/share/nginx/html
