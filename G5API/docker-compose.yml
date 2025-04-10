@@ -55,10 +55,10 @@ services:
       - PORT=3301
       - DBKEY=1234567890abcdef
       - STEAMAPIKEY=FD4DE2E2399244F143272C5621BA78E7
-      - HOSTNAME=http://cs2-tournament.ru
+      - HOSTNAME=https://cs2-tournament.ru
       - SHAREDSECRET=supersecretjwt
-      - CLIENTHOME=http://cs2-tournament.ru
-      - APIURL=http://cs2-tournament.ru/api
+      - CLIENTHOME=https://cs2-tournament.ru
+      - APIURL=https://cs2-tournament.ru/api
       - SQLUSER=get5
       - SQLPASSWORD=qWPDx8NAfqzg30dx
       - SQLPORT=3306
