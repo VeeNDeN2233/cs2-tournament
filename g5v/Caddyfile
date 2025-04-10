@@ -3,7 +3,7 @@ cs2-tournament.ru {
         reverse_proxy http://backend:3000
     }
     handle {
-        root * /usr/share/caddy
+        root * /var/www/html
         try_files {path} {path}/ /index.html
         file_server
     }
