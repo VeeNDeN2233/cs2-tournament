@@ -1,0 +1,50 @@
+2025-04-10 12:46:06.111 [info] [main] Log level: Info
+2025-04-10 12:46:06.111 [info] [main] Validating found git in: "git"
+2025-04-10 12:46:06.111 [info] [main] Using git "2.34.1" from "git"
+2025-04-10 12:46:06.111 [info] [Model][doInitialScan] Initial repository scan started
+2025-04-10 12:46:06.111 [info] > git rev-parse --show-toplevel [81ms]
+2025-04-10 12:46:06.111 [info] > git rev-parse --git-dir --git-common-dir [6ms]
+2025-04-10 12:46:06.111 [info] [Model][openRepository] Opened repository: /root/g5v
+2025-04-10 12:46:06.124 [info] > git config --get commit.template [5ms]
+2025-04-10 12:46:06.129 [info] > git rev-parse --show-toplevel [7ms]
+2025-04-10 12:46:06.137 [info] > git rev-parse --show-toplevel [4ms]
+2025-04-10 12:46:06.141 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [14ms]
+2025-04-10 12:46:06.145 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/root/g5v/.git/refs/remotes/origin/master'
+2025-04-10 12:46:06.146 [info] > git rev-parse --show-toplevel [4ms]
+2025-04-10 12:46:06.151 [info] > git rev-parse refs/remotes/origin/master [6ms]
+2025-04-10 12:46:06.161 [info] > git rev-parse --show-toplevel [10ms]
+2025-04-10 12:46:06.174 [info] > git rev-parse --show-toplevel [5ms]
+2025-04-10 12:46:06.184 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-04-10 12:46:06.184 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [23ms]
+2025-04-10 12:46:06.250 [info] > git status -z -uall [94ms]
+2025-04-10 12:46:06.342 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [16ms]
+2025-04-10 12:46:06.348 [info] > git config --get commit.template [13ms]
+2025-04-10 12:46:06.355 [info] > git config --get --local branch.master.vscode-merge-base [8ms]
+2025-04-10 12:46:06.355 [warning] [Git][config] git config failed: Failed to execute git
+2025-04-10 12:46:06.362 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [9ms]
+2025-04-10 12:46:06.366 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/root/g5v/.git/refs/remotes/origin/master'
+2025-04-10 12:46:06.369 [info] > git reflog master --grep-reflog=branch: Created from *. [8ms]
+2025-04-10 12:46:06.371 [info] > git rev-parse refs/remotes/origin/master [5ms]
+2025-04-10 12:46:06.382 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [11ms]
+2025-04-10 12:46:06.390 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [7ms]
+2025-04-10 12:46:06.394 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/master refs/remotes/origin/master [5ms]
+2025-04-10 12:46:06.404 [info] > git config --add --local branch.master.vscode-merge-base origin/master [3ms]
+2025-04-10 12:46:06.419 [info] > git status -z -uall [43ms] (cancelled)
+2025-04-10 12:46:06.420 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [9ms]
+2025-04-10 12:46:06.424 [info] > git config --get commit.template [5ms]
+2025-04-10 12:46:06.433 [info] > git config --get --local branch.master.vscode-merge-base [9ms]
+2025-04-10 12:46:06.436 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2025-04-10 12:46:06.440 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/root/g5v/.git/refs/remotes/origin/master'
+2025-04-10 12:46:06.441 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/master refs/remotes/origin/master [5ms]
+2025-04-10 12:46:06.445 [info] > git rev-parse refs/remotes/origin/master [5ms]
+2025-04-10 12:46:06.454 [info] > git merge-base refs/heads/master refs/remotes/origin/master [9ms]
+2025-04-10 12:46:06.461 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [8ms]
+2025-04-10 12:46:06.465 [info] > git diff --name-status -z --diff-filter=ADMR 6a9568fb27c49bbcd27484ec942f2c7622970ac1...refs/remotes/origin/master [4ms]
+2025-04-10 12:46:06.488 [info] > git status -z -uall [40ms]
+2025-04-10 12:46:07.077 [info] > git check-ignore -v -z --stdin [3ms]
+2025-04-10 12:49:45.623 [info] > git ls-files --stage -- DockerfileLightCaddy [18ms]
+2025-04-10 12:49:45.627 [info] > git show --textconv :DockerfileLightCaddy [31ms]
+2025-04-10 12:49:45.630 [info] > git cat-file -s 26ac829328eb141e8f4ea88403ec0b09f40b06b3 [3ms]
+2025-04-10 12:51:13.190 [info] > git show --textconv :DockerfileLight [4ms]
+2025-04-10 12:51:13.191 [info] > git ls-files --stage -- DockerfileLight [3ms]
+2025-04-10 12:51:13.194 [info] > git cat-file -s 9ea60feea489ca6ec5df7ba99fc969747c1e5e47 [1ms]

@@ -1,0 +1,38 @@
+*
+* Visual Studio Code Server
+*
+* By using the software, you agree to
+* the Visual Studio Code Server License Terms (https://aka.ms/vscode-server-license) and
+* the Microsoft Privacy Statement (https://privacy.microsoft.com/en-US/privacystatement).
+*
+Server bound to /tmp/code-faaf1e04-5033-41f5-a99d-86045adce120
+Extension host agent listening on /tmp/code-faaf1e04-5033-41f5-a99d-86045adce120
+
+[13:39:14] 
+
+
+
+
+[13:39:14] Extension host agent started.
+[13:39:15] [<unknown>][3b02c93e][ExtensionHostConnection] New connection established.
+[13:39:15] [<unknown>][04fcf468][ManagementConnection] New connection established.
+[13:39:15] [<unknown>][3b02c93e][ExtensionHostConnection] <1802> Launched Extension Host Process.
+[13:39:36] Getting Manifest... vue.volar
+[13:39:36] Installing extension: vue.volar {
+  isMachineScoped: false,
+  isApplicationScoped: false,
+  profileLocation: Er {
+    scheme: 'file',
+    authority: '',
+    path: '/root/.vscode-server/extensions/extensions.json',
+    query: '',
+    fragment: '',
+    _formatted: 'file:///root/.vscode-server/extensions/extensions.json',
+    _fsPath: '/root/.vscode-server/extensions/extensions.json'
+  },
+  productVersion: { version: '1.98.2', date: '2025-03-12T13:32:45.399Z' }
+}
+[13:39:38] Extension signature verification result for vue.volar: Success. Internal Code: 0. Executed: true. Duration: 1584ms.
+[13:39:39] Extracted extension to file:///root/.vscode-server/extensions/vue.volar-2.2.8: vue.volar
+[13:39:39] Renamed to /root/.vscode-server/extensions/vue.volar-2.2.8
+[13:39:39] Extension installed successfully: vue.volar file:///root/.vscode-server/extensions/extensions.json

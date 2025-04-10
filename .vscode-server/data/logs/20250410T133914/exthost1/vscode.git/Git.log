@@ -1,0 +1,38 @@
+2025-04-10 13:39:19.282 [info] [main] Log level: Info
+2025-04-10 13:39:19.282 [info] [main] Validating found git in: "git"
+2025-04-10 13:39:19.282 [info] [main] Using git "2.34.1" from "git"
+2025-04-10 13:39:19.282 [info] [Model][doInitialScan] Initial repository scan started
+2025-04-10 13:39:19.282 [info] > git rev-parse --show-toplevel [68ms]
+2025-04-10 13:39:19.282 [info] > git rev-parse --git-dir --git-common-dir [10ms]
+2025-04-10 13:39:19.282 [info] [Model][openRepository] Opened repository: /root/g5v
+2025-04-10 13:39:19.282 [info] > git config --get commit.template [11ms]
+2025-04-10 13:39:19.303 [info] > git rev-parse --show-toplevel [30ms]
+2025-04-10 13:39:19.313 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [20ms]
+2025-04-10 13:39:19.317 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/root/g5v/.git/refs/remotes/origin/master'
+2025-04-10 13:39:19.318 [info] > git rev-parse --show-toplevel [6ms]
+2025-04-10 13:39:19.323 [info] > git rev-parse refs/remotes/origin/master [6ms]
+2025-04-10 13:39:19.334 [info] > git rev-parse --show-toplevel [11ms]
+2025-04-10 13:39:19.474 [info] > git status -z -uall [145ms]
+2025-04-10 13:39:19.475 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [141ms]
+2025-04-10 13:39:19.475 [info] > git rev-parse --show-toplevel [128ms]
+2025-04-10 13:39:19.547 [info] > git rev-parse --show-toplevel [62ms]
+2025-04-10 13:39:19.565 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-04-10 13:39:19.628 [info] > git config --get commit.template [81ms]
+2025-04-10 13:39:19.628 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [97ms]
+2025-04-10 13:39:19.654 [info] > git config --get --local branch.master.vscode-merge-base [19ms]
+2025-04-10 13:39:19.658 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [5ms]
+2025-04-10 13:39:19.660 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/root/g5v/.git/refs/remotes/origin/master'
+2025-04-10 13:39:19.660 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/master refs/remotes/origin/master [3ms]
+2025-04-10 13:39:19.665 [info] > git rev-parse refs/remotes/origin/master [5ms]
+2025-04-10 13:39:19.672 [info] > git merge-base refs/heads/master refs/remotes/origin/master [8ms]
+2025-04-10 13:39:19.678 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [6ms]
+2025-04-10 13:39:19.681 [info] > git diff --name-status -z --diff-filter=ADMR 6a9568fb27c49bbcd27484ec942f2c7622970ac1...refs/remotes/origin/master [4ms]
+2025-04-10 13:39:19.703 [info] > git status -z -uall [36ms]
+2025-04-10 13:39:19.808 [info] > git check-ignore -v -z --stdin [4ms]
+2025-04-10 13:39:27.712 [info] > git check-ignore -v -z --stdin [3ms]
+2025-04-10 13:39:29.383 [info] > git show --textconv :src/App.vue [3ms]
+2025-04-10 13:39:29.385 [info] > git ls-files --stage -- src/App.vue [2ms]
+2025-04-10 13:39:29.388 [info] > git cat-file -s 87207c70222f2493033c937bf505bb7de2e0c8a0 [1ms]
+2025-04-10 13:39:41.261 [info] > git show --textconv :src/App.vue [435ms]
+2025-04-10 13:39:41.265 [info] > git ls-files --stage -- src/App.vue [435ms]
+2025-04-10 13:39:41.278 [info] > git cat-file -s 87207c70222f2493033c937bf505bb7de2e0c8a0 [5ms]

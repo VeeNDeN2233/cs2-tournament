@@ -1,0 +1,123 @@
+0 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+1 info using npm@8.5.1
+2 info using node@v12.22.9
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/usr/share/nodejs/npm/npmrc Completed in 8ms
+6 timing config:load:builtin Completed in 8ms
+7 timing config:load:cli Completed in 3ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:/root/g5v/.npmrc Completed in 1ms
+10 timing config:load:project Completed in 3ms
+11 timing config:load:file:/root/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:validate Completed in 0ms
+16 timing config:load:credentials Completed in 1ms
+17 timing config:load:setEnvs Completed in 1ms
+18 timing config:load Completed in 17ms
+19 timing npm:load:configload Completed in 18ms
+20 timing npm:load:setTitle Completed in 0ms
+21 timing config:load:flatten Completed in 2ms
+22 timing npm:load:display Completed in 4ms
+23 verbose logfile /root/.npm/_logs/2025-04-05T15_26_54_926Z-debug-0.log
+24 timing npm:load:logFile Completed in 4ms
+25 timing npm:load:timers Completed in 0ms
+26 timing npm:load:configScope Completed in 0ms
+27 timing npm:load Completed in 27ms
+28 timing arborist:ctor Completed in 0ms
+29 timing arborist:ctor Completed in 0ms
+30 timing idealTree:init Completed in 82ms
+31 timing idealTree:userRequests Completed in 0ms
+32 silly idealTree buildDeps
+33 silly fetch manifest axios@0.26.1
+34 http fetch GET 200 https://registry.npmjs.org/axios 205ms (cache miss)
+35 silly fetch manifest core-js@3.26.1
+36 http fetch GET 200 https://registry.npmjs.org/core-js 148ms (cache miss)
+37 silly fetch manifest register-service-worker@1.7.2
+38 http fetch GET 200 https://registry.npmjs.org/register-service-worker 92ms (cache miss)
+39 silly fetch manifest vue@2.7.14
+40 http fetch GET 200 https://registry.npmjs.org/vue 97ms (cache miss)
+41 silly fetch manifest vue-i18n@8.28.2
+42 http fetch GET 200 https://registry.npmjs.org/vue-i18n 86ms (cache miss)
+43 silly fetch manifest vue-router@3.6.5
+44 http fetch GET 200 https://registry.npmjs.org/vue-router 62ms (cache miss)
+45 silly fetch manifest vue-sse@2.5.2
+46 http fetch GET 200 https://registry.npmjs.org/vue-sse 639ms (cache miss)
+47 silly fetch manifest vuetify@2.6.12
+48 http fetch GET 200 https://registry.npmjs.org/vuetify 93ms (cache miss)
+49 silly fetch manifest vuex@3.6.2
+50 http fetch GET 200 https://registry.npmjs.org/vuex 53ms (cache miss)
+51 silly fetch manifest @vue/cli-plugin-babel@5.0.8
+52 http fetch GET 200 https://registry.npmjs.org/@vue%2fcli-plugin-babel 112ms (cache miss)
+53 silly fetch manifest @vue/cli-service@5.0.8
+54 http fetch GET 200 https://registry.npmjs.org/@vue%2fcli-service 79ms (cache miss)
+55 silly fetch manifest vue-template-compiler@2.7.14
+56 http fetch GET 200 https://registry.npmjs.org/vue-template-compiler 94ms (cache miss)
+57 silly fetch manifest webpack-sources@*
+58 http fetch GET 200 https://registry.npmjs.org/webpack-sources 57ms (cache miss)
+59 silly fetch manifest @vue/cli-plugin-eslint@5.0.8
+60 http fetch GET 200 https://registry.npmjs.org/@vue%2fcli-plugin-eslint 113ms (cache miss)
+61 silly fetch manifest eslint@7.32.0
+62 http fetch GET 200 https://registry.npmjs.org/eslint 134ms (cache miss)
+63 silly fetch manifest @vue/cli-plugin-pwa@5.0.8
+64 http fetch GET 200 https://registry.npmjs.org/@vue%2fcli-plugin-pwa 174ms (cache miss)
+65 silly fetch manifest @vue/cli-plugin-router@5.0.8
+66 http fetch GET 200 https://registry.npmjs.org/@vue%2fcli-plugin-router 117ms (cache miss)
+67 silly fetch manifest @vue/cli-plugin-vuex@5.0.8
+68 http fetch GET 200 https://registry.npmjs.org/@vue%2fcli-plugin-vuex 116ms (cache miss)
+69 silly fetch manifest @vue/eslint-config-prettier@6.0.0
+70 http fetch GET 200 https://registry.npmjs.org/@vue%2feslint-config-prettier 344ms (cache miss)
+71 silly fetch manifest eslint-plugin-prettier@3.4.1
+72 http fetch GET 200 https://registry.npmjs.org/eslint-plugin-prettier 70ms (cache miss)
+73 silly fetch manifest prettier@1.19.1
+74 http fetch GET 200 https://registry.npmjs.org/prettier 62ms (cache miss)
+75 silly fetch manifest babel-eslint@10.1.0
+76 http fetch GET 200 https://registry.npmjs.org/babel-eslint 64ms (cache miss)
+77 silly fetch manifest eslint-plugin-vue@6.2.2
+78 http fetch GET 200 https://registry.npmjs.org/eslint-plugin-vue 87ms (cache miss)
+79 silly fetch manifest eslint@^5.0.0 || ^6.0.0
+80 timing idealTree Completed in 3381ms
+81 timing command:install Completed in 3401ms
+82 verbose stack Error: unable to resolve dependency tree
+82 verbose stack     at Arborist.[failPeerConflict] (/usr/share/nodejs/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1399:25)
+82 verbose stack     at Arborist.[loadPeerSet] (/usr/share/nodejs/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1365:34)
+82 verbose stack     at async Arborist.[buildDepStep] (/usr/share/nodejs/@npmcli/arborist/lib/arborist/build-ideal-tree.js:951:11)
+82 verbose stack     at async Arborist.buildIdealTree (/usr/share/nodejs/@npmcli/arborist/lib/arborist/build-ideal-tree.js:215:7)
+82 verbose stack     at async Promise.all (index 1)
+82 verbose stack     at async Arborist.reify (/usr/share/nodejs/@npmcli/arborist/lib/arborist/reify.js:152:5)
+82 verbose stack     at async Install.exec (/usr/share/nodejs/npm/lib/commands/install.js:157:5)
+82 verbose stack     at async module.exports (/usr/share/nodejs/npm/lib/cli.js:66:5)
+83 verbose cwd /root/g5v
+84 verbose Linux 5.15.0-113-generic
+85 verbose argv "/usr/bin/node" "/usr/bin/npm" "install"
+86 verbose node v12.22.9
+87 verbose npm  v8.5.1
+88 error code ERESOLVE
+89 error ERESOLVE unable to resolve dependency tree
+90 error
+91 error While resolving: [1mg5v[22m@[1m1.7.1[22m
+91 error Found: [1meslint[22m@[1m7.32.0[22m[2m[22m
+91 error [2mnode_modules/eslint[22m
+91 error   [33mdev[39m [1meslint[22m@"[1m^7.32.0[22m" from the root project
+91 error
+91 error Could not resolve dependency:
+91 error [35mpeer[39m [1meslint[22m@"[1m^5.0.0 || ^6.0.0[22m" from [1meslint-plugin-vue[22m@[1m6.2.2[22m[2m[22m
+91 error [2mnode_modules/eslint-plugin-vue[22m
+91 error   [33mdev[39m [1meslint-plugin-vue[22m@"[1m^6.2.2[22m" from the root project
+91 error
+91 error Fix the upstream dependency conflict, or retry
+91 error this command with --force, or --legacy-peer-deps
+91 error to accept an incorrect (and potentially broken) dependency resolution.
+91 error
+91 error See /root/.npm/eresolve-report.txt for a full report.
+92 verbose exit 1
+93 timing npm Completed in 3652ms
+94 verbose unfinished npm timer reify 1743866815171
+95 verbose unfinished npm timer reify:loadTrees 1743866815186
+96 verbose unfinished npm timer idealTree:buildDeps 1743866815270
+97 verbose unfinished npm timer idealTree:#root 1743866815271
+98 verbose code 1
+99 error A complete log of this run can be found in:
+99 error     /root/.npm/_logs/2025-04-05T15_26_54_926Z-debug-0.log

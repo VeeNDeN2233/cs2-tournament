@@ -1,0 +1,31 @@
+2025-04-10 12:44:35.713 [info] 
+
+
+
+
+2025-04-10 12:44:35.723 [info] Extension host agent started.
+2025-04-10 12:44:35.769 [info] Started initializing default profile extensions in extensions installation folder. file:///root/.vscode-server/extensions
+2025-04-10 12:44:35.778 [info] Completed initializing default profile extensions in extensions installation folder. file:///root/.vscode-server/extensions
+2025-04-10 12:44:36.120 [info] [<unknown>][2bb30231][ExtensionHostConnection] New connection established.
+2025-04-10 12:44:36.183 [info] [<unknown>][2bb30231][ExtensionHostConnection] <4041> Launched Extension Host Process.
+2025-04-10 12:44:36.187 [info] [<unknown>][9fd35a20][ManagementConnection] New connection established.
+2025-04-10 12:44:45.204 [info] [<unknown>][9fd35a20][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2025-04-10 12:44:45.238 [info] [<unknown>][2bb30231][ExtensionHostConnection] <4041> Extension Host Process exited with code: 0, signal: null.
+2025-04-10 12:44:45.239 [info] Cancelling previous shutdown timeout
+2025-04-10 12:44:45.239 [info] Last EH closed, waiting before shutting down
+2025-04-10 12:44:49.927 [info] [<unknown>][16ecf063][ExtensionHostConnection] New connection established.
+2025-04-10 12:44:49.928 [info] [<unknown>][24b10e09][ManagementConnection] New connection established.
+2025-04-10 12:44:49.930 [info] [<unknown>][16ecf063][ExtensionHostConnection] <4084> Launched Extension Host Process.
+2025-04-10 12:45:57.484 [info] [<unknown>][24b10e09][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2025-04-10 12:45:57.545 [info] [<unknown>][16ecf063][ExtensionHostConnection] <4084> Extension Host Process exited with code: 0, signal: null.
+2025-04-10 12:45:57.546 [info] Cancelling previous shutdown timeout
+2025-04-10 12:45:57.546 [info] Last EH closed, waiting before shutting down
+2025-04-10 12:46:02.387 [info] [<unknown>][390786a2][ExtensionHostConnection] New connection established.
+2025-04-10 12:46:02.388 [info] [<unknown>][5b9e0cb0][ManagementConnection] New connection established.
+2025-04-10 12:46:02.393 [info] [<unknown>][390786a2][ExtensionHostConnection] <4200> Launched Extension Host Process.
+2025-04-10 12:50:57.549 [info] New EH opened, aborting shutdown
+2025-04-10 12:51:18.898 [info] Getting Manifest... ms-azuretools.vscode-docker
+2025-04-10 12:51:19.115 [info] Installing extension: ms-azuretools.vscode-docker {"isMachineScoped":false,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.98.2","date":"2025-03-12T13:32:45.399Z"}}
+2025-04-10 12:51:19.395 [info] Getting Manifest... docker.docker
+2025-04-10 12:51:19.559 [info] Installing extension: docker.docker {"isMachineScoped":false,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.98.2","date":"2025-03-12T13:32:45.399Z"},"context":{"dependecyOrPackExtensionInstall":true}}
+2025-04-10 13:15:34.269 [warning] No ptyHost heartbeat after 6 seconds

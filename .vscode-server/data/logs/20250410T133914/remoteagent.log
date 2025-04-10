@@ -1,0 +1,16 @@
+2025-04-10 13:39:14.901 [info] 
+
+
+
+
+2025-04-10 13:39:14.915 [info] Extension host agent started.
+2025-04-10 13:39:15.452 [info] [<unknown>][3b02c93e][ExtensionHostConnection] New connection established.
+2025-04-10 13:39:15.461 [info] [<unknown>][04fcf468][ManagementConnection] New connection established.
+2025-04-10 13:39:15.513 [info] [<unknown>][3b02c93e][ExtensionHostConnection] <1802> Launched Extension Host Process.
+2025-04-10 13:39:36.697 [info] Getting Manifest... vue.volar
+2025-04-10 13:39:36.927 [info] Installing extension: vue.volar {"isMachineScoped":false,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.98.2","date":"2025-03-12T13:32:45.399Z"}}
+2025-04-10 13:39:38.960 [info] Extension signature verification result for vue.volar: Success. Internal Code: 0. Executed: true. Duration: 1584ms.
+2025-04-10 13:39:39.057 [info] Extracted extension to file:///root/.vscode-server/extensions/vue.volar-2.2.8: vue.volar
+2025-04-10 13:39:39.061 [info] Renamed to /root/.vscode-server/extensions/vue.volar-2.2.8
+2025-04-10 13:39:39.068 [info] Extension installed successfully: vue.volar file:///root/.vscode-server/extensions/extensions.json
+2025-04-10 13:43:20.925 [warning] No ptyHost heartbeat after 6 seconds
