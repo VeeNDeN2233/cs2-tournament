@@ -235,3 +235,22 @@ cat ~/.ssh/id_ed25519.pub
 git remote set-url origin git@github.com:VeeNDeN2233/cs2-tournament.git
 ssh -T git@github.co
 git push -u origin master
+rm -rf G5API/.git
+rm -rf g5v/.git
+git add .
+git commit -m "Объединение файлов из G5API и g5v"
+git config --global user.name "VeeNDeN2233"
+git config --global user.email "belenikin2048@mail.ru"
+git commit --amend --reset-author
+git commit -m "Объединение файлов из G5API и g5v"
+git status
+git add .gitconfig
+git add .
+git commit -m "Объединение файлов из G5API и g5v"
+git push origin master
+sudo apt install git-filter-repo
+git filter-repo --path .ssh/id_ed25519 --invert-paths
+git filter-repo --path .ssh/id_ed25519 --invert-paths --force
+ls -la
+touch .gitignore
+nano .gitignore
