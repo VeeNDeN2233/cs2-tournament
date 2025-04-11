@@ -3,7 +3,7 @@ module.exports = {
   devServer: {
     proxy: {
       "/api": {
-        target: "http://localhost:3301",
+        target: "http://G5API:3301",
         changeOrigin: true,
         ws: true,
         pathRewrite: {
